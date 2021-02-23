@@ -1,0 +1,13 @@
+appVersion: v1
+kind: Service
+metadata:
+  name: gin-web
+  labels:
+    app: gin-web
+    tier: service
+spec:
+    type: NodePort
+    port:
+    - port: 9000
+    selector:
+      app: gin-web
